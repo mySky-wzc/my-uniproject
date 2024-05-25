@@ -43,9 +43,6 @@ export default {
           appkey: "c01c81c0fca9c95b",
           keyword: _.trim(this.searchKey),
         },
-        header: {
-          "content-type": "application/json",
-        },
         success: (res) => {
           console.log(res.data);
           this.resultList = res.data.result;
