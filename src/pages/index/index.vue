@@ -1,49 +1,51 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
+		<div v-for="(item,index) in funcList" :key="index" class="funcItem" @click="toPath(item.path)">
+			<u--image :src="item.pic" width="50px" height="50px" />
+			<div>{{item.name}}</div>
+		</div>
 	</view>
 </template>
 
 <script>
+	import { mapGetters } from 'vuex'
 	export default {
 		data() {
 			return {
-				title: 'Hello'
 			}
 		},
 		onLoad() {
-
+			
+		},
+		computed: {
+			...mapGetters(["funcList"])
 		},
 		methods: {
-
+			toPath(row) {
+				uni.navigateTo({
+					url: row
+				});
+			}
 		}
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.content {
 		display: flex;
-		flex-direction: column;
+		align-items: center;
+		padding: 10px;
+		flex-wrap: wrap;
+	}
+	.funcItem{
+		display: flex;
+		flex-flow: column;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin: 200rpx auto 50rpx auto;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
+		width: 100px;
+		height: 100px;
+		box-shadow: 0 0 5px #000;
+		border-radius: 10px;
+		margin: 10px;
 	}
 </style>
