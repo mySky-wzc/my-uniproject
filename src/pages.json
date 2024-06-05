@@ -18,6 +18,18 @@
       "style": {
         "navigationBarTitleText": "周公解梦" // 周公解梦
       }
+    },
+    {
+      "path": "pages/kdcx/index",
+      "style": {
+        "navigationBarTitleText": "快递查询" // 快递查询
+      }
+    },
+    {
+      "path": "pages/kdcx/detail",
+      "style": {
+        "navigationBarTitleText": "快递详情" // 快递查询
+      }
     }
   ],
   "easycom": {

@@ -37,8 +37,9 @@ export default {
         });
         return;
       }
+      var url = uni.getSystemInfoSync().uniPlatform == "mp-weixin" ? "https://api.jisuapi.com" : "/jisu";
       uni.request({
-        url: "/jisu/dream/search",
+        url: `${url}/dream/search`,
         data: {
           appkey: "c01c81c0fca9c95b",
           keyword: _.trim(this.searchKey),
