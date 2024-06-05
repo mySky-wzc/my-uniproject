@@ -28,7 +28,19 @@
     {
       "path": "pages/kdcx/detail",
       "style": {
-        "navigationBarTitleText": "快递详情" // 快递查询
+        "navigationBarTitleText": "快递详情" // 快递详情
+      }
+    },
+    {
+      "path": "pages/cpcx/index",
+      "style": {
+        "navigationBarTitleText": "菜谱查询" // 菜谱查询
+      }
+    },
+    {
+      "path": "pages/cpcx/detail",
+      "style": {
+        "navigationBarTitleText": "菜谱详情" // 菜谱详情
       }
     }
   ],
@@ -49,14 +61,14 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "/static/logo.png",
-        "selectedIconPath": "/static/logo.png",
+        "iconPath": "/static/home.png",
+        "selectedIconPath": "/static/home.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/index/mine",
-        "iconPath": "/static/logo.png",
-        "selectedIconPath": "/static/logo.png",
+        "iconPath": "/static/mine.png",
+        "selectedIconPath": "/static/mine.png",
         "text": "我"
       }
     ]
