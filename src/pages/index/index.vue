@@ -34,7 +34,7 @@
 	.content {
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		justify-content: space-between;
 		padding: 10px;
 		flex-wrap: wrap;
 	}

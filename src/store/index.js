@@ -28,6 +28,12 @@ const store = new Vuex.Store({
 				path: "/pages/cpcx/index",
 				pic: "/static/menu.png",
 				name: "菜谱查询"
+			},
+			{
+				id: 4,
+				path: "/pages/sdyx/index",
+				pic: "/static/shudu.png",
+				name: "数独"
 			}
 		]
 	},

@@ -15,6 +15,13 @@ module.exports = {
           pathRewrite: {
             "^/binstd": ""
           }
+        },
+        "/juhe": {
+          target: "https://apis.juhe.cn",
+          changeOrigin: true,
+          pathRewrite: {
+            "^/juhe": ""
+          }
         }
       }
     }

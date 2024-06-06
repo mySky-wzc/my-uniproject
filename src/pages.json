@@ -42,6 +42,18 @@
       "style": {
         "navigationBarTitleText": "菜谱详情" // 菜谱详情
       }
+    },
+    {
+      "path": "pages/sdyx/index",
+      "style": {
+        "navigationBarTitleText": "数独" // 数独
+      }
+    },
+    {
+      "path": "pages/sdyx/detail",
+      "style": {
+        "navigationBarTitleText": "游戏页" // 游戏页
+      }
     }
   ],
   "easycom": {

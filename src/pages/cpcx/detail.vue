@@ -4,7 +4,7 @@
         <img :src="result.pic" alt="" srcset="">
     </div>
     <view style="text-align: center;font-size: 18px">{{result.name}}</view>
-    <view style="padding: 0 20px;margin-top: 20px;">{{result.content}}</view>
+    <view style="padding: 0 20px;margin-top: 20px;" v-html="result.content"></view>
     <view style="text-align: center;margin: 20px 0;">--食材清单--</view>
     <view v-for="(item,index) in result.material" :key="index" class="material">
         <text>{{item.mname}}</text>

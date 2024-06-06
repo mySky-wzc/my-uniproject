@@ -14,10 +14,10 @@
         <view style="text-align: center"><image src="/static/noOrders.png"></image></view>
         <view class="tip">搜索美味，即刻到来</view>
     </template>
-    <div class="content-info" v-if="resultList.length">
+    <div class="cp-info" v-if="resultList.length">
         <div v-for="(item,index) in resultList" :key="item.number" class="content-item" @click="toPath(index)">
             <div class="top">
-                <img :src="item.pic" alt="" srcset="">
+                <img :src="item.pic" alt="" srcset="" @click.stop="previewImg(index)">
                 <view class="rinfo">
                     <view class="title">{{item.name + "（" + item.cookingtime + "）"}}</view>
                     <view class="bottom">{{item.tag}}</view>
@@ -38,6 +38,11 @@ export default {
   },
   onLoad() {},
   methods: {
+    previewImg(index) {
+        uni.previewImage({
+            urls: [this.resultList[index].pic]
+        });
+    },
     toPath(index) {
         var that = this;
         uni.setStorage({
@@ -102,7 +107,7 @@ export default {
 .tip{
     text-align: center;
 }
-.content-info{
+.cp-info{
     .content-item{
         margin-top: 3px;
         border-radius: 5px;
@@ -116,6 +121,7 @@ export default {
                 margin-right: 10px;
             }
             .rinfo{
+                flex: 1;
                 .bottom{
                     font-size: 12px;
                     color: #ccc;
