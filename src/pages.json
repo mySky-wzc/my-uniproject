@@ -54,6 +54,12 @@
       "style": {
         "navigationBarTitleText": "游戏页" // 游戏页
       }
+    },
+    {
+      "path": "pages/bddt/index",
+      "style": {
+        "navigationBarTitleText": "地图" // 地图
+      }
     }
   ],
   "easycom": {

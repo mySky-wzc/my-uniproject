@@ -34,6 +34,12 @@ const store = new Vuex.Store({
 				path: "/pages/sdyx/index",
 				pic: "/static/shudu.png",
 				name: "数独"
+			},
+			{
+				id: 4,
+				path: "/pages/bddt/index",
+				pic: "/static/map.png",
+				name: "地图"
 			}
 		]
 	},
