@@ -15,7 +15,7 @@ Vue.use(uView)
 Vue.prototype.$store = store
 Vue.config.productionTip = false
 Vue.prototype._ = _;
-Vue.prototype.$$dayjs = dayjs;
+Vue.prototype.$$dayjs = dayjs
 
 App.mpType = 'app'
 
