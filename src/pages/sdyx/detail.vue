@@ -87,31 +87,34 @@ export default {
             for(var i = 0; i < 9; i++) {
                 for(var j = 0; j < 9; j++) {
                     if(that.gameInfo.puzzle[i][j].value != that.gameInfo.solution[i][j]) {
-                        uni.showToast({
-                            icon: "error",
-                            title: "失败咯！！！"
-                        })
                         flag1 = false;
-                        return;
+                        break;
                     }
                 }
-                if(!flag1) {
-                    return;
-                }
+                if(!flag1) break;
             }
             that.endTime = new Date().getTime();
             var date3 = that.endTime - that.nowTime;
             const hours = Math.floor(date3 / 3600000);
             const minutes = Math.floor((date3 % 3600000) / 60000);
             const seconds = Math.floor((date3 % 60000) / 1000);
-            if(flag1) {
-                uni.showToast({
-                    icon: "success",
-                    title: `恭喜你，成功咯！！！花费${hours ? (hours + "小时") : ""}${minutes ? "分" : ""}${seconds}秒`,
-                    duration: 3000
-                })
-            }
-            uni.navigateBack();
+            uni.showModal({
+                title: "提示",
+                content: !!flag1 ? `恭喜你，成功咯！！！花费${hours ? (hours + "小时") : ""}${minutes ? "分" : ""}${seconds}秒` : "失败咯！！！",
+                cancelText: "返回",
+                confirmText: "重玩",
+                success: function (res) {
+                    if (res.confirm) {
+                        uni.redirectTo({
+                            url: "/pages/sdyx/detail"
+                        })
+                    } else if (res.cancel) {
+                        uni.navigateBack({
+                            delta: 1
+                        })
+                    }
+                }
+            })
         }
     }
 }
