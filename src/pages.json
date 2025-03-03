@@ -18,6 +18,48 @@
       "style": {
         "navigationBarTitleText": "周公解梦" // 周公解梦
       }
+    },
+    {
+      "path": "pages/kdcx/index",
+      "style": {
+        "navigationBarTitleText": "快递查询" // 快递查询
+      }
+    },
+    {
+      "path": "pages/kdcx/detail",
+      "style": {
+        "navigationBarTitleText": "快递详情" // 快递详情
+      }
+    },
+    {
+      "path": "pages/cpcx/index",
+      "style": {
+        "navigationBarTitleText": "菜谱查询" // 菜谱查询
+      }
+    },
+    {
+      "path": "pages/cpcx/detail",
+      "style": {
+        "navigationBarTitleText": "菜谱详情" // 菜谱详情
+      }
+    },
+    {
+      "path": "pages/sdyx/index",
+      "style": {
+        "navigationBarTitleText": "数独" // 数独
+      }
+    },
+    {
+      "path": "pages/sdyx/detail",
+      "style": {
+        "navigationBarTitleText": "游戏页" // 游戏页
+      }
+    },
+    {
+      "path": "pages/bddt/index",
+      "style": {
+        "navigationBarTitleText": "地图" // 地图
+      }
     }
   ],
   "easycom": {
@@ -37,14 +79,14 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "/static/logo.png",
-        "selectedIconPath": "/static/logo.png",
+        "iconPath": "/static/home.png",
+        "selectedIconPath": "/static/home.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/index/mine",
-        "iconPath": "/static/logo.png",
-        "selectedIconPath": "/static/logo.png",
+        "iconPath": "/static/mine.png",
+        "selectedIconPath": "/static/mine.png",
         "text": "我"
       }
     ]

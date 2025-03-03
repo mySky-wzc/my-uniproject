@@ -8,6 +8,20 @@ module.exports = {
           pathRewrite: {
             '^/jisu': ''
           }
+        },
+        "/binstd": {
+          target: "https://api.binstd.com",
+          changeOrigin: true,
+          pathRewrite: {
+            "^/binstd": ""
+          }
+        },
+        "/juhe": {
+          target: "https://apis.juhe.cn",
+          changeOrigin: true,
+          pathRewrite: {
+            "^/juhe": ""
+          }
         }
       }
     }

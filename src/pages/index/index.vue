@@ -34,6 +34,7 @@
 	.content {
 		display: flex;
 		align-items: center;
+		// justify-content: space-between;
 		padding: 10px;
 		flex-wrap: wrap;
 	}
@@ -42,10 +43,10 @@
 		flex-flow: column;
 		align-items: center;
 		justify-content: center;
-		width: 100px;
-		height: 100px;
+		width: 28vw;
+    	height: 28vw;
 		box-shadow: 0 0 5px #000;
 		border-radius: 10px;
-		margin: 10px;
+		margin: 5px;
 	}
 </style>

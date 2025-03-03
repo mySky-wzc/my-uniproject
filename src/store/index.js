@@ -14,8 +14,32 @@ const store = new Vuex.Store({
 			{
 				id: 1,
 				path: "/pages/zgjm/index",
-				pic: "/static/logo.png",
+				pic: "/static/dream.png",
 				name: "周公解梦"
+			},
+			{
+				id: 2,
+				path: "/pages/kdcx/index",
+				pic: "/static/logist.png",
+				name: "快递查询"
+			},
+			{
+				id: 3,
+				path: "/pages/cpcx/index",
+				pic: "/static/menu.png",
+				name: "菜谱查询"
+			},
+			{
+				id: 4,
+				path: "/pages/sdyx/index",
+				pic: "/static/shudu.png",
+				name: "数独"
+			},
+			{
+				id: 4,
+				path: "/pages/bddt/index",
+				pic: "/static/map.png",
+				name: "地图"
 			}
 		]
 	},
